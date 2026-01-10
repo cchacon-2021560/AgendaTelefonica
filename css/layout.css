@@ -1,0 +1,33 @@
+.login-contenedor {
+    min-height: 100vh;
+    background: var(--color-fondo);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-cuadro {
+    background: var(--color-blanco);
+    padding: 2.5rem;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.login-cuadro {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.login-cuadro:hover {
+    transform: translateY(-6px);
+    box-shadow:
+        0 25px 50px rgba(0, 0, 0, 0.2);
+}
+
+/*responsive prueba*/
+@media (max-width: 480px) {
+    .login-card {
+        padding: 2rem 1.5rem;
+    }
+}
