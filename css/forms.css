@@ -1,0 +1,48 @@
+.login-cuadro h1 {
+    margin-bottom: 0.5rem;
+    color: var(--color-texto);
+}
+
+.login-cuadro p {
+    margin-bottom: 2rem;
+    color: var(--color-texto-secundario);
+}
+
+.input-login {
+    margin-bottom: 1.5rem;
+}
+
+.input-login label {
+    display: block;
+    margin-bottom: 0.3rem;
+    font-size: 0.9rem;
+}
+
+.input-login input {
+    width: 100%;
+    padding: 0.7rem;
+    border-radius: 8px;
+    border: 1px solid var(--color-borde);
+}
+
+.input-login input:focus {
+    outline: none;
+    border-color: var(--color-destacado);
+}
+
+.btn-principal {
+    display: block;
+    text-align: center;
+    padding: 0.8rem;
+    background: var(--color-destacado);
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background 0.2s ease;
+}
+
+.btn-principal:hover {
+    background: #1543c0;
+}
+
+
