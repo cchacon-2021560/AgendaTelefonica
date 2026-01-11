@@ -30,10 +30,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Inter', sans-serif;
-}
-
-.fondo-distinto {
-  background-color: #204960;
+  scroll-behavior: smooth;
 }
 
 .info-texto h2 {
