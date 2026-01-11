@@ -14,31 +14,69 @@
 </head>
 
 <body>
-    <main class="login-contenedor">
-        <section class="login-cuadro">
+    <main>
+        <section class="login-seccion">
+            <div class="login-contenedor">
+                <div class="login-cuadro">
 
-            <h1>Bienvenido</h1>
-            <p>Inicia sesión para acceder a tu agenda</p>
+                    <h1>Bienvenido</h1>
+                    <p>Inicia sesión para acceder a tu agenda</p>
 
-            <form>
-                <div class="input-login">
-                    <label>Correo electrónico</label>
-                    <input type="email" placeholder="correo@ejemplo.com">
+                    <form>
+                        <div class="input-login">
+                            <label>Correo electrónico</label>
+                            <input type="email" placeholder="correo@ejemplo.com">
+                        </div>
+
+                        <div class="input-login">
+                            <label>Contraseña</label>
+                            <input type="password" placeholder="••••••••">
+                        </div>
+
+                        <a href="vistas/contactos.html" class="btn-principal">
+                            Iniciar sesión
+                        </a>
+                    </form>
+
                 </div>
-
-                <div class="input-login">
-                    <label>Contraseña</label>
-                    <input type="password" placeholder="••••••••">
-                </div>
-
-                <a href="vistas/contactos.html" class="btn-principal">
-                    Iniciar sesión
-                </a>
-            </form>
-
+            </div>
         </section>
+
+        <section class="info-seccion">
+            <div class="info-contenido izquierda reveal">
+                <img src="image/contactos.png" alt="Contactos">
+                <div class="info-texto">
+                    <h2>Gestión de contactos</h2>
+                    <p>Administra, edita y organiza tus contactos fácilmente.</p>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="info-seccion fondo-claro">
+            <div class="info-contenido derecha reveal">
+                <img src="image/tareas.png" alt="Tareas">
+                <div class="info-texto">
+                    <h2>Tareas pendientes</h2>
+                    <p>Organiza tus actividades y no olvides nada importante.</p>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="info-seccion">
+            <div class="info-contenido izquierda reveal">
+                <img src="image/favoritos.png" alt="Favoritos">
+                <div class="info-texto">
+                    <h2>Contactos favoritos</h2>
+                    <p>Accede rápidamente a las personas más importantes.</p>
+                </div>
+            </div>
+        </section>
+
     </main>
 
+    <script src="js/scroll.js"></script>
 </body>
 
 </html>
