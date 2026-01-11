@@ -14,3 +14,35 @@
   box-sizing: border-box;
   font-family: 'Inter', sans-serif;
 }
+
+/*Mis variables de colores:*/
+:root {
+  --color-fondo: #295E7A;
+  --color-blanco: #ffffff;
+  --color-texto: #1f2933;
+  --color-texto-secundario: #6b7280;
+  --color-destacado: #2563eb;
+  --color-borde: #e5e7eb;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+.fondo-distinto {
+  background-color: #204960;
+}
+
+.info-texto h2 {
+  color: #ffff;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.info-texto p {
+  color: #ffff;
+  line-height: 1.6;
+}
