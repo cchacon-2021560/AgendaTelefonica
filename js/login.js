@@ -24,6 +24,5 @@ formLogin.addEventListener("submit", function (e) {
     }
     
 
-    //cambiar a contacto.html*
-    window.location.href="html/perfil.html";
+    window.location.href="html/contacto.html";
 })
