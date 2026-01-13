@@ -25,5 +25,5 @@ formLogin.addEventListener("submit", function (e) {
     
 
     //cambiar a contacto.html*
-    window.location.href="vistas/perfil.html";
+    window.location.href="html/perfil.html";
 })
