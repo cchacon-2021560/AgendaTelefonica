@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contactos | Agenda</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/layout.css">
+</head>
+
+<body>
+
+    <header class="barra-superior">
+        <h1>Agenda</h1>
+        <button id="btn-perfil" class="btn-secundario">Mi perfil</button>
+    </header>
+
+    <main class="contactos-contenedor">
+        <p>CONTACTOS</p>
+    </main>
+
+
+    <div class="modal" id="modal-perfil">
+        <div class="modal-contenido perfil-cuadro">
+            <button class="modal-cerrar" id="cerrar-perfil">✕</button>
+
+            <h2>Mi perfil</h2>
+
+            <div class="perfil-item">
+                <span class="perfil-etiqueta">Correo</span>
+                <span id="perfil-correo"></span>
+            </div>
+
+            <div class="perfil-item">
+                <span class="perfil-etiqueta">Contraseña</span>
+                <span id="perfil-password"></span>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="../js/storage.js"></script>
+    <script src="../js/contactos.js"></script>
+
+</body>
+
+</html>
