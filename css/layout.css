@@ -97,19 +97,10 @@ html{
 }
 
 /*-----------Perfil (el modal)-------------*/
-.barra-superior {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1.5rem 2rem;
-    background: var(--color-blanco);
-    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-}
-
 .modal {
     position: fixed;
     inset: 0;
-    background: rgba(0,0,0,0.4);
+    background: rgba(0, 0, 0, 0.45);
     display: none;
     align-items: center;
     justify-content: center;
@@ -128,10 +119,48 @@ html{
     position: absolute;
     top: 1rem;
     right: 1rem;
-    background: none;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
     border: none;
+    background: transparent;
+    color: #9b1c1c;
     font-size: 1.2rem;
     cursor: pointer;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+.modal-cerrar:hover {
+    background: rgba(155, 28, 28, 0.1);
+    color: #7f1d1d;
+}
+
+.perfil-titulo {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.perfil-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.perfil-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.perfil-etiqueta {
+    font-size: 0.85rem;
+    color: var(--color-texto-secundario);
+    margin-bottom: 0.25rem;
+}
+
+.perfil-valor {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--color-texto);
 }
 
 
