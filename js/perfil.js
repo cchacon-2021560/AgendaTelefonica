@@ -1,3 +1,4 @@
+//llammamos a la funcion como objeto
 const usuario = obtenerDatos("usuario");
 
 if (usuario) {

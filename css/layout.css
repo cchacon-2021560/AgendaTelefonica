@@ -96,6 +96,47 @@ html{
     }
 }
 
+/*-----------Perfil-------------*/
+.perfil-contenedor {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--color-fondo);
+}
+
+.perfil-cuadro {
+    background: var(--color-blanco);
+    padding: 2.5rem;
+    width: 100%;
+    max-width: 420px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.perfil-item {
+    margin-top: 1.5rem;
+}
+
+.perfil-etiqueta {
+    display: block;
+    font-size: 0.85rem;
+    color: var(--color-texto-secundario);
+}
+
+.perfil-valor {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--color-texto);
+}
+
+
+
+
+
+
+
+
 /*responsive prueba*/
 @media (max-width: 480px) {
     .login-cuadro {
