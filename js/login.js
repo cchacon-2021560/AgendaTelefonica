@@ -24,5 +24,5 @@ formLogin.addEventListener("submit", function (e) {
     }
     
 
-    window.location.href="html/contacto.html";
+    window.location.href="html/contactos.html";
 })
