@@ -45,4 +45,15 @@
     background: #1543c0;
 }
 
+/* modal de perfil*/
+
+.perfil-cuadro {
+    background: var(--color-blanco);
+    padding: 2.5rem;
+    border-radius: 12px;
+    max-width: 420px;
+    width: 100%;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
 

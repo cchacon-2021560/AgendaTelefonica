@@ -119,31 +119,29 @@ html{
     position: absolute;
     top: 1rem;
     right: 1rem;
-    width: 36px;
-    height: 36px;
+    width: 32px;
+    height: 32px;
     border-radius: 50%;
     border: none;
     background: transparent;
-    color: #9b1c1c;
+    color: #b91c1c;
     font-size: 1.2rem;
     cursor: pointer;
-    transition: background 0.2s ease, color 0.2s ease;
 }
 
 .modal-cerrar:hover {
-    background: rgba(155, 28, 28, 0.1);
-    color: #7f1d1d;
+    background: rgba(185, 28, 28, 0.15);
 }
 
 .perfil-titulo {
-    margin-bottom: 2rem;
     text-align: center;
+    margin-bottom: 2rem;
 }
 
 .perfil-info {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 1.2rem;
 }
 
 .perfil-item {
@@ -154,7 +152,6 @@ html{
 .perfil-etiqueta {
     font-size: 0.85rem;
     color: var(--color-texto-secundario);
-    margin-bottom: 0.25rem;
 }
 
 .perfil-valor {
@@ -162,14 +159,6 @@ html{
     font-weight: 500;
     color: var(--color-texto);
 }
-
-
-
-
-
-
-
-
 
 /*responsive prueba*/
 @media (max-width: 480px) {
