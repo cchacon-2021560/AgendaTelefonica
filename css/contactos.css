@@ -1,0 +1,63 @@
+.contactos-contenedor{
+    background: red !important;
+}
+
+
+.contactos-lista {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+    padding: 2rem;
+}
+
+.contacto-card {
+    background: var(--color-blanco);
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    animation: aparecer 0.4s ease forwards;
+}
+
+.contacto-card h3 {
+    margin-bottom: 0.5rem;
+}
+
+.contacto-acciones {
+    display: flex;
+    gap: 0.75rem;
+}
+
+.btn-icono {
+    background: none;
+    border: none;
+    font-size: 1.1rem;
+    cursor: pointer;
+    color: var(--color-texto-secundario);
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.btn-icono:hover {
+    transform: scale(1.15);
+}
+
+.favorito:hover {
+    color: crimson;
+}
+
+.eliminar:hover {
+    color: #444;
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
