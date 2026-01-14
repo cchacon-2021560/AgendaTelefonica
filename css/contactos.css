@@ -1,13 +1,10 @@
-.contactos-contenedor{
-    background: red !important;
-}
-
-
 .contactos-lista {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: 1.5rem;
     padding: 2rem;
+    position: relative;
+    z-index: 1;
 }
 
 .contacto-card {
@@ -65,4 +62,24 @@
 .favorito.activo {
     color: crimson;
 }
+
+/* fondos */
+.contactos-contenedor {
+    min-height: calc(100vh - 64px);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.contactos-contenedor::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.3);
+    z-index: 0;
+}
+
+
+
 
