@@ -166,3 +166,45 @@ html{
         padding: 2rem 1.5rem;
     }
 }
+
+/* barra superior (contactos) */ 
+
+.barra-superior {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 1rem 2rem;
+    background: var(--color-blanco);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.barra-superior h1 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--color-texto);
+}
+
+.acciones-superior {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.barra-superior .btn-secundario,
+.barra-superior .btn-principal {
+    padding: 0.45rem 0.65rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.barra-superior button i {
+    font-size: 1rem;
+}
+
+.acciones-superior .activo {
+    background: var(--color-destacado);
+    color: var(--color-blanco);
+}
+
