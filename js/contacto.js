@@ -94,3 +94,18 @@ listaContactos.addEventListener("click", (e) => {
         alternarFavorito(id);
     }
 });
+
+
+/* Lógica para aplicar el fondo de forma aleatoria */
+const fondos = [
+    "../image/fondo1.jpg",
+    "../image/fondo2.jpg",
+    "../image/fondo3.jpg",
+    "../image/fondo4.jpg",
+    "../image/fondo5.jpg"
+];
+
+const fondoAleatorio = fondos[Math.floor(Math.random() * fondos.length)];
+
+const contenedor = document.querySelector(".contactos-contenedor");
+contenedor.style.backgroundImage = `url(${fondoAleatorio})`;
