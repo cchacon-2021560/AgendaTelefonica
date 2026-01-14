@@ -44,7 +44,7 @@ const contactos = [
     }
 ];
 
-const listaContacto=document.querySelector(".contactos-lista");
+const listaContactos = document.querySelector(".contactos-lista");
 
 function renderizarContactos(lista) {
     listaContactos.innerHTML = "";
@@ -60,7 +60,9 @@ function renderizarContactos(lista) {
             </div>
 
             <div class="contacto-acciones">
-                <button class="btn-icono favorito" title="Favorito">
+                <button class="btn-icono favorito ${contacto.favorito ? "activo" : ""}" 
+                        data-id="${contacto.id}" 
+                        title="Favorito">
                     <i class="fa-solid fa-heart"></i>
                 </button>
 
@@ -75,3 +77,20 @@ function renderizarContactos(lista) {
 }
 
 renderizarContactos(contactos);
+
+function alternarFavorito(id) {
+    const contacto = contactos.find(c => c.id == id);
+    if (contacto) {
+        contacto.favorito = !contacto.favorito;
+        renderizarContactos(contactos);
+    }
+}
+
+listaContactos.addEventListener("click", (e) => {
+    const botonFavorito = e.target.closest(".favorito");
+
+    if (botonFavorito) {
+        const id = Number(botonFavorito.dataset.id);
+        alternarFavorito(id);
+    }
+});
