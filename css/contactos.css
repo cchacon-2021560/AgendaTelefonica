@@ -61,3 +61,8 @@
         transform: translateY(0);
     }
 }
+
+.favorito.activo {
+    color: crimson;
+}
+
