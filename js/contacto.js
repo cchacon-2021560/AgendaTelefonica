@@ -65,6 +65,7 @@ function renderizarContactos(lista) {
     lista.forEach(contacto => {
         const card = document.createElement("article");
         card.classList.add("contacto-card");
+        card.dataset.id = contacto.id;
 
         card.innerHTML = `
             <div class="contacto-info">
@@ -150,4 +151,36 @@ function mostrarFavoritos() {
 
 btnTodos.addEventListener("click", mostrarTodos);
 btnFavoritos.addEventListener("click", mostrarFavoritos);
+
+/* modal de detalle -contactos*/
+const modalDetalle = document.getElementById("modal-detalle");
+const cerrarDetalle = document.getElementById("cerrar-detalle");
+
+const detalleNombre = document.getElementById("detalle-nombre");
+const detalleTelefono = document.getElementById("detalle-telefono");
+const detalleCorreo = document.getElementById("detalle-correo");
+const detalleFavorito = document.getElementById("detalle-favorito");
+
+listaContactos.addEventListener("click", (e) => {
+    const card = e.target.closest(".contacto-card");
+    if(!card) return ;
+    
+    if(e.target.closest("button")) return ;
+
+    const id = Number(card.dataset.id);
+    const contacto = contactos.find(c=> c.id === id);
+
+    if(contacto){
+        detalleNombre.textContent= contacto.nombre;
+        detalleTelefono.textContent = contacto.telefono;
+        detalleCorreo.textContent = contacto.correo;
+        detalleFavorito.textContent = contacto.favorito ? "Sí" : "No" ;
+
+        modalDetalle.classList.add ("activo");
+    }
+});
+
+cerrarDetalle.addEventListener("click", () => {
+    modalDetalle.classList.remove("activo");
+});
 
