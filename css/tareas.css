@@ -1,0 +1,38 @@
+
+
+/* fondos */
+.tareas-contenedor {
+    min-height: calc(100vh - 64px);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.tareas-contenedor::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    z-index: 0;
+}
+
+.tareas-lista {
+    display: grid;
+    gap: 1rem;
+    padding: 2rem;
+}
+
+.tarea-card {
+    background: var(--color-blanco);
+    padding: 1rem 1.2rem;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tarea-card.completada {
+    opacity: 0.6;
+    text-decoration: line-through;
+}
