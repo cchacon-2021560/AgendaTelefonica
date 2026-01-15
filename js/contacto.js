@@ -184,3 +184,21 @@ cerrarDetalle.addEventListener("click", () => {
     modalDetalle.classList.remove("activo");
 });
 
+
+/* modal nuevo contacto */
+const btnNuevoContacto = document.getElementById("btn-nuevo-contacto");
+const modalNuevoContacto = document.getElementById("modal-nuevo-contacto");
+const cerrarNuevoContacto = document.getElementById("cerrar-nuevo-contacto");
+const cancelarNuevoContacto = document.getElementById("cancelar-nuevo-contacto");
+
+btnNuevoContacto.addEventListener("click", () => {
+    modalNuevoContacto.classList.add("activo");
+});
+
+cerrarNuevoContacto.addEventListener("click", () => {
+    modalNuevoContacto.classList.remove("activo");
+});
+
+cancelarNuevoContacto.addEventListener("click", () => {
+    modalNuevoContacto.classList.remove("activo");
+});
