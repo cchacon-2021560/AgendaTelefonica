@@ -41,6 +41,20 @@ const contactos = [
         telefono: "5555-9012",
         correo: "carlos@gmail.com",
         favorito: false
+    },
+    {
+        id: 4,
+        nombre: "Miguel Ángel",
+        telefono: "5555-4896",
+        correo: "Miguel@gmail.com",
+        favorito: false
+    },
+    {
+        id: 5,
+        nombre: "Marcos Echeverría",
+        telefono: "5555-4321",
+        correo: "Mito@gmail.com",
+        favorito: false
     }
 ];
 
@@ -82,9 +96,15 @@ function alternarFavorito(id) {
     const contacto = contactos.find(c => c.id == id);
     if (contacto) {
         contacto.favorito = !contacto.favorito;
-        renderizarContactos(contactos);
+
+        if (btnFavoritos.classList.contains("activo")) {
+            mostrarFavoritos();
+        } else {
+            mostrarTodos();
+        }
     }
 }
+
 
 listaContactos.addEventListener("click", (e) => {
     const botonFavorito = e.target.closest(".favorito");
@@ -109,3 +129,25 @@ const fondoAleatorio = fondos[Math.floor(Math.random() * fondos.length)];
 
 const contenedor = document.querySelector(".contactos-contenedor");
 contenedor.style.backgroundImage = `url(${fondoAleatorio})`;
+
+
+/* filtro favoritos */
+const btnTodos = document.getElementById("btn-filtro-todos");
+const btnFavoritos = document.getElementById("btn-filtro-favoritos");
+
+function mostrarTodos() {
+    btnTodos.classList.add("activo");
+    btnFavoritos.classList.remove("activo");
+    renderizarContactos(contactos);
+}
+
+function mostrarFavoritos() {
+    const favoritos = contactos.filter(c => c.favorito);
+    btnFavoritos.classList.add("activo");
+    btnTodos.classList.remove("activo");
+    renderizarContactos(favoritos);
+}
+
+btnTodos.addEventListener("click", mostrarTodos);
+btnFavoritos.addEventListener("click", mostrarFavoritos);
+
