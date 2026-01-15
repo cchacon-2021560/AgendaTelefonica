@@ -36,6 +36,13 @@
     transition: transform 0.2s ease, color 0.2s ease;
 }
 
+.acciones-superior a {
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .btn-icono:hover {
     transform: scale(1.15);
 }
