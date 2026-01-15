@@ -80,6 +80,17 @@
     z-index: 0;
 }
 
+/* modal de detalle-contacto */
+
+.detalle-cuadro {
+    background: var(--color-blanco);
+    padding: 2rem;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 400px;
+}
+
+
 
 
 
