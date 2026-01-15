@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tareas | Agenda</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/forms.css">
+    <link rel="stylesheet" href="../css/contactos.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+
+<body>
+
+    <header class="barra-superior">
+        <h1>Tareas</h1>
+        <div class="acciones-superior">
+            <button id="btn-volver" class="btn-secundario">Volver</button>
+            <button id="btn-nueva-tarea" class="btn-principal">+</button>
+        </div>
+    </header>
+
+    <main class="tareas-contenedor">
+        <section class="tareas-lista"></section>
+    </main>
+
+
+    <div class="modal" id="modal-nueva-tarea">
+        <div class="modal-contenido">
+            <button class="modal-cerrar" id="cerrar-nueva-tarea">x</button>
+            <h2>Nueva tarea</h2>
+            <input id="input-tarea" placeholder="Escribe la tarea">
+            <button id="guardar-tarea" class="btn-principal">Guardar</button>
+        </div>
+    </div>
+
+    <script src="../js/tareas.js"></script>
+    <script src="../js/tareas.js"></script>
+
+</body>
+
+</html>
