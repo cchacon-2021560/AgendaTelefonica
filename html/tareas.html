@@ -1,3 +1,5 @@
+html
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -17,7 +19,9 @@
     <header class="barra-superior">
         <h1>Tareas</h1>
         <div class="acciones-superior">
-            <button id="btn-volver" class="btn-secundario">Volver</button>
+            <a href="contactos.html" class="btn-secundario">
+                <i class="fa-solid fa-arrow-left"></i>
+            </a>
             <button id="btn-nueva-tarea" class="btn-principal">+</button>
         </div>
     </header>
@@ -28,15 +32,34 @@
 
 
     <div class="modal" id="modal-nueva-tarea">
-        <div class="modal-contenido">
-            <button class="modal-cerrar" id="cerrar-nueva-tarea">x</button>
-            <h2>Nueva tarea</h2>
-            <input id="input-tarea" placeholder="Escribe la tarea">
-            <button id="guardar-tarea" class="btn-principal">Guardar</button>
+        <div class="modal-contenido tarea-cuadro">
+
+            <button class="modal-cerrar" id="cerrar-nueva-tarea">×</button>
+
+            <h2 id="titulo-modal">Nueva tarea</h2>
+
+            <form id="form-tarea">
+
+                <label>Título</label>
+                <input type="text" id="tarea-titulo" required>
+
+                <label>Descripción</label>
+                <textarea id="tarea-descripcion" rows="3"></textarea>
+
+                <label>Prioridad</label>
+                <select id="tarea-prioridad">
+                    <option value="alta">Alta</option>
+                    <option value="media">Media</option>
+                    <option value="baja">Baja</option>
+                </select>
+
+                <button type="submit" class="btn-principal" id="guardar-tarea">Guardar</button>
+            </form>
+
         </div>
     </div>
 
-    <script src="../js/tareas.js"></script>
+
     <script src="../js/tareas.js"></script>
 
 </body>
